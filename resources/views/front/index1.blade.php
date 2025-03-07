@@ -11,66 +11,6 @@
 
     <main class="main-wrapper">
 
-           <!-- Start Slider Area -->
-           <div class="axil-main-slider-area main-slider-style-7 bg_image--8">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-8">
-                        <div class="main-slider-content">
-                            <span class="subtitle"><i class="fas fa-fire"></i>Hot Deal In Diamond</span>
-                            <h1 class="title">Exclusive Design Collection</h1>
-                            <p>Casual line with short design in 100% suede Diamond</p>
-                            <div class="shop-btn">
-                                <a href="shop.html" class="axil-btn btn-bg-secondary right-icon">Browse Item <i class="fal fa-long-arrow-right"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Slider Area -->
-
-        <!-- Start Axil Product Poster Area  -->
-        <div class="axil-poster axil-section-gap pb--0">
-            <div class="container">
-                <div class="row g-lg-5 g-4">
-                    <div class="col-lg-6">
-                        <div class="single-poster">
-                            <a href="shop.html">
-                                <img src="./assets/images/product/poster/poster-08.png" alt="eTrade promotion poster">
-                                <div class="poster-content">
-                                    <div class="inner">
-                                        <h3 class="title">Premimum <br> Quality.</h3>
-                                        <span class="sub-title">Collections <i class="fal fa-long-arrow-right"></i></span>
-                                    </div>
-                                </div>
-                                <!-- End .poster-content -->
-                            </a>
-                        </div>
-                        <!-- End .single-poster -->
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="single-poster">
-                            <a href="shop-sidebar.html">
-                                <img src="./assets/images/product/poster/poster-09.png" alt="eTrade promotion poster">
-                                <div class="poster-content content-left">
-                                    <div class="inner">
-                                        <span class="sub-title">50% Offer In Winter</span>
-                                        <h3 class="title">Get Exclusive <br> Diamond</h3>
-                                    </div>
-                                </div>
-                                <!-- End .poster-content -->
-                            </a>
-                        </div>
-                        <!-- End .single-poster -->
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End Axil Product Poster Area  -->
-
-        <
-{{-- 
         <div class="container-fluid px-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -119,7 +59,7 @@
                 </button>
             </div>
         </div>
-        --}}
+       
        
 
 
