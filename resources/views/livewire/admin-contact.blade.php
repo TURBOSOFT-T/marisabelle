@@ -7,7 +7,7 @@
         <hr class="my-6 mx-n4" />
         <div class="text-center bg-primary card my-auto p-1 mb-3">
             <h6 class="text-white">
-                Logos, et Adresses
+                Logos, et images
             </h6>
         </div>
 
@@ -109,6 +109,12 @@
                     @enderror
                 </div>
             </div>
+            <hr class="my-6 mx-n4" />
+            <div class="text-center bg-primary card my-auto p-1 mb-3">
+                <h6 class="text-white">
+                    Adresses et réseaux sociaux
+                </h6>
+            </div>
             <div class="col-sm-6">
                 <div class="mb-3">
                     <label for="">Email</label>
@@ -193,7 +199,12 @@
                 @enderror
             </div>
 
-
+            <hr class="my-6 mx-n4" />
+            <div class="text-center bg-primary card my-auto p-1 mb-3">
+                <h6 class="text-white">
+                    Bibiography
+                </h6>
+            </div>
 
             <hr class="my-6 mx-n4" />
             <div class="text-center bg-primary card my-auto p-1 mb-3">
