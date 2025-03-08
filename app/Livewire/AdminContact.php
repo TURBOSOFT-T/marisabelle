@@ -111,7 +111,7 @@ class AdminContact extends Component
             'telephone' => 'nullable|numeric',
             'email' => 'nullable',
             'addresse' => 'nullable|string',
-            'description' => 'nullable|string|max:1000',
+            'description' => 'nullable|string|max:100000',
         ]);
 
         // update the user
