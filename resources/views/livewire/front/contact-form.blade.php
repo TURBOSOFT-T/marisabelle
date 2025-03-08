@@ -74,7 +74,7 @@
 
             <style>
                 .btn-bg-primary2 {
-                    background-color: #f11414;
+                    background-color: #9aa751;
                     color: #ffffff;
                     border: none;
                     padding: 10px 20px;
