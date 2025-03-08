@@ -93,11 +93,11 @@
                 <br> <br>
                 <div class="col-md-4 col-5">
                     <div class="header-brand">
-                        <a href="index.html" class="logo logo-dark">
-                            <img src="assets/images/logo/logo.png" alt="Site Logo">
+                        <a  href="{{ route('home') }}" class="logo logo-dark">
+                            <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
                         </a>
-                        <a href="index.html" class="logo logo-light">
-                            <img src="assets/images/logo/logo-light.png" alt="Site Logo">
+                        <a  href="{{ route('home') }}" class="logo logo-light">
+                            <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
                         </a>
                     </div>
                 </div>

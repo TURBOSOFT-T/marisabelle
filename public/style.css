@@ -31,7 +31,7 @@
 }
 
 .btn-hover-text-success {
-    --bs-btn-hover-color: #f61329;
+    --bs-btn-hover-color: #e6bec2;
   }
 
   @media (max-width: 767px) {
@@ -54,7 +54,7 @@
     transform: scale(1.5);
 } */
 .btn-bg-primary2 {
-    background-color:rgb(224, 14, 21);
+    background-color:rgb(230, 195, 196);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -65,7 +65,7 @@
 
 
 .btn-bg-secondary2 {
-    background-color: #f20d24;
+    background-color: #d1b9bb;
     /* Couleur de fond, bleu dans cet exemple */
     color: #ffffff;
     /* Couleur du texte, blanc dans cet exemple */
@@ -216,13 +216,13 @@ border-radius: 8px;
 }
 
 .btn-bg-primary1 {
-    background-color: #e80f0f
+    background-color: #c9aeae
     ; /* Example primary color */
     color: #fff;
     border: none;
 }
 .btn-bg-promotion {
-    background-color: #e80f0f
+    background-color: #ddc8c8
     ; /* Example primary color */
     color: #fff;
     border: none;
@@ -322,7 +322,7 @@ border-radius: 8px;
 #dropdown-header-menu {
     color: #ffffff;
     /* Text color */
-    background-color: #f1134e;
+    background-color: #d6c1c7;
     /* Background color */
     border: 1px solid #e2890b;
     /* Border color */
