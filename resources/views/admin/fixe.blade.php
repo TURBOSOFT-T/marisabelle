@@ -132,7 +132,7 @@
                                 <img src="/icons/diagramme-circulaire.svg" height="20" width="20" alt="icon"
                                     srcset="">
                             </div>
-                            <div class="menu-title">My Dashboard</div>
+                            <div class="menu-title">Mon Dashboard</div>
                         </a>
                     </li>
                 @endcan
@@ -235,7 +235,7 @@
                             <div class="parent-icon icon-color-3"> <i class="bx bx-conversation"></i>
                             </div>
                             <div class="menu-title">
-                                Produits
+                                Catalogues
                             </div>
                         </a>
                         <ul>
@@ -273,7 +273,7 @@
                                 <i class="bx bx-archive"></i>
                             </div>
                             <div class="menu-title">
-                                Commandes
+                              Les  Commandes
                             </div>
                         </a>
                     </li>
@@ -284,7 +284,7 @@
                             <i class="bx bx-archive"></i>
                         </div>
                         <div class="menu-title">
-                            Articles
+                         Les   Articles
                         </div>
                     </a>
                 </li>
@@ -310,7 +310,7 @@
                             <i class='bx bxs-contact'></i>
                         </div>
                         <div class="menu-title">
-                            Formulaire de Contacts
+                             Contacts
                         </div>
                     </a>
 
@@ -335,14 +335,14 @@
                                 <i class="ri-settings-2-line"></i>
                             </div>
                             <div class="menu-title">
-                                Configurations
+                                Paramètres
                             </div>
                         </a>
                         <ul>
                             <li>
                                 <a href="{{ route('contact-admin') }}">
                                     <i class="bx bx-right-arrow-alt"></i>
-                                    Informations
+                                    Boutique
                                 </a>
                             </li>
                             <li>
@@ -358,12 +358,12 @@
                                     Vider le cash
                                 </a>
                             </li>
-                            <li>
+                           {{--  <li>
                                 <a href="{{route('storage.link')}}"  >
                                     <i class="bx bx-right-arrow-alt"></i>
                                     Lier les images
                                 </a>
-                            </li>  
+                            </li>  --}} 
                         </ul>
 
 

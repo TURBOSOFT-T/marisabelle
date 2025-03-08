@@ -193,10 +193,10 @@
                                             <button class="dropbtn">
                                                 @if (app()->getLocale() == 'fr')
                                                     <img src="https://img.icons8.com/color/20/france-circular.png"
-                                                        alt="fr">
+                                                        alt="fr"> 
                                                 @elseif(app()->getLocale() == 'en')
                                                     <img src="https://img.icons8.com/color/20/great-britain-circular.png"
-                                                        alt="en">
+                                                        alt="en"> 
                                                 @else
                                                     <img src="https://img.icons8.com/color/20/france-circular.png"
                                                         alt="fr">
