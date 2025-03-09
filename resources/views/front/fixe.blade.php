@@ -104,6 +104,20 @@
                         </a>
                     </div>
                 </div>
+
+                <style>
+                    .logo img {
+    width: 250px;
+    height: 50;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 100px; /* Réduction de la taille sur mobile */
+    }
+}
+
+                </style>
                 <div class="col-md-4 col-7">
                     <div class="header-action">
                         <ul class="action-list">
