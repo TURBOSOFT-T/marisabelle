@@ -43,7 +43,7 @@ class AdminContact extends Component
         $this->image_apropos0 = $config->image_apropos;
         $this->image_apropos12 = $config->image_apropos1;
         $this->image_apropos12 = $config->image_apropos1;
-        $this->titre_apropos22 = $config->titre_apropos2;
+        $this->titre_apropos2 = $config->titre_apropos2;
         $this->image_contact2 = $config->image_contact;
         $this->image_shop2 = $config->image_shop;
         $this->image_about2 = $config->image_about;

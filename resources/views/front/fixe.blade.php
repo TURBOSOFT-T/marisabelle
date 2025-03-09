@@ -23,18 +23,21 @@
 
     <!-- Bootstrap CSS -->
  <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
- <link rel="stylesheet" href="assets/css/vendor/font-awesome.css">
- <link rel="stylesheet" href="assets/css/vendor/flaticon/flaticon.css">
- <link rel="stylesheet" href="assets/css/vendor/slick.css">
- <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
- <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
- <link rel="stylesheet" href="assets/css/vendor/sal.css">
- <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
- <link rel="stylesheet" href="assets/css/vendor/base.css">
- <link rel="stylesheet" href="assets/css/style.min.css">
+ <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+ <link rel="stylesheet" href="/assets/css/vendor/font-awesome.css">
+ <link rel="stylesheet" href="/assets/css/vendor/flaticon/flaticon.css">
+ <link rel="stylesheet" href="/assets/css/vendor/slick.css">
+ <link rel="stylesheet" href="/assets/css/vendor/slick-theme.css">
+ <link rel="stylesheet" href="/assets/css/vendor/jquery-ui.min.css">
+ <link rel="stylesheet" href="/assets/css/vendor/sal.css">
+ <link rel="stylesheet" href="/assets/css/vendor/magnific-popup.css">
+ <link rel="stylesheet" href="/assets/css/vendor/base.css">
+ <link rel="stylesheet" href="/assets/css/style.min.css">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
+
+
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
@@ -372,7 +375,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="./assets/images/icons/service1.png" alt="Service">
+                            <img src="/assets/images/icons/service1.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">Fast &amp; Secure Delivery</h6>
@@ -383,7 +386,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="./assets/images/icons/service2.png" alt="Service">
+                            <img src="/assets/images/icons/service2.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">Money Back Guarantee</h6>
@@ -394,7 +397,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="./assets/images/icons/service3.png" alt="Service">
+                            <img src="/assets/images/icons/service3.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">24 Hour Return Policy</h6>
@@ -405,7 +408,7 @@
                 <div class="col">
                     <div class="service-box service-style-2">
                         <div class="icon">
-                            <img src="./assets/images/icons/service4.png" alt="Service">
+                            <img src="/assets/images/icons/service4.png" alt="Service">
                         </div>
                         <div class="content">
                             <h6 class="title">Pro Quality Support</h6>
@@ -762,27 +765,31 @@
     <!-- JS
 ============================================ -->
      <!-- Modernizer JS -->
-     <script src="assets/js/vendor/modernizr.min.js"></script>
+     <script src="/assets/js/vendor/modernizr.min.js"></script>
      <!-- jQuery JS -->
      <script src="assets/js/vendor/jquery.js"></script>
      <!-- Bootstrap JS -->
-     <script src="assets/js/vendor/popper.min.js"></script>
-     <script src="assets/js/vendor/bootstrap.min.js"></script>
-     <script src="assets/js/vendor/slick.min.js"></script>
-     <script src="assets/js/vendor/js.cookie.js"></script>
+     <script src="/assets/js/vendor/popper.min.js"></script>
+     <script src="/assets/js/vendor/bootstrap.min.js"></script>
+     <script src="/assets/js/vendor/slick.min.js"></script>
+     <script src="/assets/js/vendor/js.cookie.js"></script>
      <!-- <script src="assets/js/vendor/jquery.style.switcher.js"></script> -->
-     <script src="assets/js/vendor/jquery-ui.min.js"></script>
-     <script src="assets/js/vendor/jquery.ui.touch-punch.min.js"></script>
-     <script src="assets/js/vendor/jquery.countdown.min.js"></script>
-     <script src="assets/js/vendor/sal.js"></script>
-     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
-     <script src="assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-     <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
-     <script src="assets/js/vendor/counterup.js"></script>
-     <script src="assets/js/vendor/waypoints.min.js"></script>
+     <script src="/assets/js/vendor/jquery-ui.min.js"></script>
+     <script src="/assets/js/vendor/jquery.ui.touch-punch.min.js"></script>
+     <script src="/assets/js/vendor/jquery.countdown.min.js"></script>
+     <script src="/assets/js/vendor/sal.js"></script>
+     <script src="/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+     <script src="/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+     <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+     <script src="/assets/js/vendor/counterup.js"></script>
+     <script src="/assets/js/vendor/waypoints.min.js"></script>
  
      <!-- Main JS -->
-     <script src="assets/js/main.js"></script>
+     <script src="/assets/js/main.js"></script>
+
+
+     <!-- Owl Carousel CSS -->
+
     <!-- Main JS -->
    
 

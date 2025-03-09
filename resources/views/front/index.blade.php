@@ -10,25 +10,58 @@
 
 
     <main class="main-wrapper">
+   
 
-           <!-- Start Slider Area -->
-           <div class="axil-main-slider-area main-slider-style-7 bg_image--8">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-sm-8">
-                        <div class="main-slider-content">
-                            <span class="subtitle"><i class="fas fa-fire"></i>Hot Deal In Diamond</span>
-                            <h1 class="title">Exclusive Design Collection</h1>
-                            <p>Casual line with short design in 100% suede Diamond</p>
-                            <div class="shop-btn">
-                                <a href="shop.html" class="axil-btn btn-bg-secondary right-icon">Browse Item <i class="fal fa-long-arrow-right"></i></a>
+        <div class="container-fluid px-0 mb-5">
+            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    @foreach ($banners as $key => $banner)
+                    <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
+                        <img class="d-block w-100" src="{{ Storage::url($banner->image) }}" alt="Image">
+
+
+                        <div class="carousel-caption  d-md-block">
+                            <div class="container">
+
+                                <div class="main-slider-content">
+                                    <span class="subtitle"style="font-size: 3rem; color: #ffffff" ><i class="fas fa-fire"></i>
+
+                                        {{ \App\Helpers\TranslationHelper::TranslateText($banner->titre ?? ' ') }}
+                                    </span>
+                                    <p style="font-size: 3rem; color: #ffffff;  margin-top: 10px; ">
+
+                                        {{ \App\Helpers\TranslationHelper::TranslateText($banner->sous_titre ?? ' ') }}
+                                    </p>
+
+                                </div>
+                                <br>
+                                <div class="shop-btn d-flex justify-content-center">
+                                    <a href="{{ route('shop') }}" class="axil-btn btn-bg-primary2 right-icon">
+
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Voir boutique') }}
+                                        <i class="fal fa-long-arrow-right"></i>
+                                    </a>
+                                </div>
+
+
+
+
                             </div>
                         </div>
                     </div>
+                    @endforeach
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-        <!-- End Slider Area -->
+     
 
         <!-- Start Axil Product Poster Area  -->
         <div class="axil-poster axil-section-gap pb--0">
@@ -69,64 +102,13 @@
         </div>
         <!-- End Axil Product Poster Area  -->
 
-        <
-{{-- 
-        <div class="container-fluid px-0 mb-5">
-            <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    @foreach ($banners as $key => $banner)
-                    <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                        <img class="d-block w-100" src="{{ Storage::url($banner->image) }}" alt="Image">
-
-
-                        <div class="carousel-caption  d-md-block">
-                            <div class="container">
-
-                                <div class="main-slider-content">
-                                    <span class="subtitle"style="font-size: 3rem; color: #ffffff" ><i class="fas fa-fire"></i>
-
-                                        {{ \App\Helpers\TranslationHelper::TranslateText($banner->titre ?? ' ') }}
-                                    </span>
-                                    <p style="font-size: 3rem; color: #ffffff;  margin-top: 10px; ">
-
-                                        {{ \App\Helpers\TranslationHelper::TranslateText($banner->sous_titre ?? ' ') }}
-                                    </p>
-
-                                </div>
-                                <div class="shop-btn d-flex justify-content-center">
-                                    <a href="{{ route('shop') }}" class="axil-btn btn-bg-primary2 right-icon">
-
-                                        {{ \App\Helpers\TranslationHelper::TranslateText('Voir boutique') }}
-                                        <i class="fal fa-long-arrow-right"></i>
-                                    </a>
-                                </div>
-
-
-
-
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#header-carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        --}}
        
 
         <div class="axil-best-seller-product-area bg-color-white axil-section-gap pb--50 pb_sm--30">
             <div class="container">
                 <div class="section-title-wrapper">
                     <span class="title-highlighter highlighter-secondary"><i class="far fa-shopping-basket"></i>This Month</span>
-                    <h2 class="title">Best Sellers</h2>
+                    <h2 class="title">Les nouveatés</h2>
                 </div>
                 <div class="new-arrivals-product-activation-2 slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide product-slide-mobile">
                     <div class="slick-single-layout">

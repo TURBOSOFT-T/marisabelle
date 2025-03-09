@@ -130,7 +130,7 @@
                                 </div>
                                 <!-- End .row -->
                                 <div class="row row--15">
-                                    @if ($produits)
+                                 
 
                                         @foreach ($produits as $key => $produit)
                                             <div class="col-xl-4 col-sm-6">
@@ -249,7 +249,7 @@
                                                 </div>
                                             </div>
                                         @endforeach
-                                    @endif
+                                  
 
                                     <!-- End Single Product  -->
                                 </div>

@@ -1,6 +1,7 @@
 @extends('front.fixe')
 @section('titre', $produit->nom)
 @section('body')
+
     @php
 
         $config = DB::table('configs')->first();
@@ -298,6 +299,8 @@
         </div>
         <!-- End Shop Area  -->
 
+
+
         <!-- Start Recently Viewed Product Area  -->
         <div class="axil-product-area bg-color-white axil-section-gap pb--50 pb_sm--30">
             <div class="container">
@@ -419,6 +422,7 @@
 
                 </div>
             </div>
+        </div> 
             <style>
                 .axil-breadcrumb-item1 {
             font-size: 14px;
@@ -437,6 +441,56 @@
             
             </style>
             <!-- End Axil Newsletter Area  -->
+
+
+            <script>
+
+$(document).ready(function() {
+    // Initialisation de Slick
+    $('.recent-product-activation').slick({
+        slidesToShow: 4, // Nombre de produits visibles à la fois
+        slidesToScroll: 1, // Nombre de produits à défiler à chaque fois
+        infinite: true, // Défilement en boucle
+        autoplay: true, // Défilement automatique
+        autoplaySpeed: 3000, // Vitesse de défilement en millisecondes
+        arrows: true, // Afficher les flèches de navigation
+        dots: false, // Désactiver les points de pagination
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+
+            </script>
+
+            <style>
+                .recent-product-activation {
+    display: flex;
+    gap: 15px; /* Espace entre les produits */
+}
+
+.slick-slide {
+    display: inline-block; /* Assure que les produits restent sur une ligne */
+}
+
+            </style>
     </main>
 
 </main>
