@@ -10,7 +10,28 @@
 
 
     <main class="main-wrapper">
-   
+   <style>
+    
+.carousel-item img {
+    height: 600px; /* Ajuste la hauteur selon ton besoin */
+    object-fit: cover; /* Assure un bon recadrage sans déformation */
+     
+}
+
+/* Tablettes */
+@media (max-width: 992px) {
+    .carousel-item img {
+        height: 400px; /* Réduire la hauteur sur tablette */
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px; /* Hauteur plus petite pour mobile */
+    }
+}
+   </style>
 
         <div class="container-fluid px-0 mb-5">
             <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
