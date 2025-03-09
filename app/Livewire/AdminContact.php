@@ -27,8 +27,17 @@ class AdminContact extends Component
    $instagram,
    $linkedin,
    $tiktok,
-   $slogan;
+   $slogan,
 
+
+   $titre_promo,
+   $description_promo,
+   $image_promo, $image_promo2,
+
+
+   $titre_promo1,
+   $description_promo1,
+   $image_promo1 , $image_promo12;
 
 
   
@@ -37,6 +46,8 @@ class AdminContact extends Component
     public function mount(){
         $config = config::first();
         $this->icone_annee2 = $config->icone_annee;
+        $this->image_promo2 = $config->image_promo;
+        $this->titre_promo1 = $config->titre_promo12;
         $this->image_shop2 = $config->image_shop;
         $this->icone_satisfaction2 = $config->icone_satisfaction;
         $this->icone_prix2 = $config->icone_prix;
@@ -87,6 +98,14 @@ class AdminContact extends Component
         $this->linkedin=$config->linkedin;
         $this->tiktok=$config->tiktok;
         $this->slogan=$config->slogan;
+
+        $this->titre_promo = $config->ttitre_promo;
+        $this->description_promo = $config->description_promo;
+       
+      
+        $this->titre_promo1 = $config->titre_promo1;
+       
+        $this->description_promo1 = $config->description_promo1;
 
 
 
@@ -228,6 +247,22 @@ class AdminContact extends Component
             }
             $config->icone_prix= $this->icone_prix->store('icon', 'public');
         }
+
+        if($this->image_promo){
+            //delete old image
+            if ($this->image_promo2) {
+                Storage::disk('public')->delete($this->image_promo2);
+            }
+            $config->image_promo= $this->image_promo->store('image_promo2', 'public');
+        }
+
+        if($this->image_promo1){
+            //delete old image
+            if ($this->image_promo12) {
+                Storage::disk('public')->delete($this->image_promo12);
+            }
+            $config->image_promo1= $this->image_promo1->store('image_promo1', 'public');
+        }
         
 
 
@@ -261,6 +296,10 @@ class AdminContact extends Component
         $config->linkedin = $this->linkedin;
         $config->tiktok = $this->tiktok;
         $config->slogan = $this->slogan;
+        $config->titre_promo = $this->titre_promo;
+        $config->description_promo = $this->description_promo;
+        $config->titre_promo1 = $this->titre_promo1;
+        $config->description_promo1 = $this->description_promo1;
 
         
 

@@ -102,12 +102,12 @@
                 <div class="row g-lg-5 g-4">
                     <div class="col-lg-6">
                         <div class="single-poster">
-                            <a href="shop.html">
-                                <img src="./assets/images/product/poster/poster-08.png" alt="eTrade promotion poster">
+                            <a  href="{{ route('shop') }}">
+                                <img src="{{ Storage::url($config->image_promo) }}" alt="">
                                 <div class="poster-content">
                                     <div class="inner">
-                                        <h3 class="title">Premimum <br> Quality.</h3>
-                                        <span class="sub-title">Collections <i class="fal fa-long-arrow-right"></i></span>
+                                        <h3 class="title">  {{ \App\Helpers\TranslationHelper::TranslateText($config->titre_promo ?? ' ') }}</h3>
+                                        <span class="sub-title">  {{ \App\Helpers\TranslationHelper::TranslateText($config->description_promo ?? ' ') }} <i class="fal fa-long-arrow-right"></i></span>
                                     </div>
                                 </div>
                                 <!-- End .poster-content -->
@@ -117,12 +117,12 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="single-poster">
-                            <a href="shop-sidebar.html">
-                                <img src="./assets/images/product/poster/poster-09.png" alt="eTrade promotion poster">
+                            <a  href="{{ route('shop') }}">
+                                <img src="{{ Storage::url($config->image_promo1) }}" alt="">
                                 <div class="poster-content content-left">
                                     <div class="inner">
-                                        <span class="sub-title">50% Offer In Winter</span>
-                                        <h3 class="title">Get Exclusive <br> Diamond</h3>
+                                        <span class="sub-title">  {{ \App\Helpers\TranslationHelper::TranslateText($config->titre_promo1 ?? ' ') }}</span>
+                                        <h3 class="title">{{ \App\Helpers\TranslationHelper::TranslateText($config->description_promo1 ?? ' ') }} </h3>
                                     </div>
                                 </div>
                                 <!-- End .poster-content -->

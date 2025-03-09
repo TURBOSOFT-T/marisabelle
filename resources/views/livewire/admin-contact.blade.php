@@ -202,8 +202,83 @@
             <hr class="my-6 mx-n4" />
             <div class="text-center bg-primary card my-auto p-1 mb-3">
                 <h6 class="text-white">
-                    Bibiography
+                    Les promotions
                 </h6>
+            </div>
+            <div class="text-center  card my-auto p-1 mb-3">
+                <h6 class="text-red">
+                    Section 1
+                </h6>
+            </div>
+           
+            <div class="row g-6">
+                <div class="col-md-12">
+                    <label class="form-label" for="multicol-username">Titre</label>
+
+                    <input type="text" wire:model="titre_promo" placeholder="Le titre " rows="2"
+                        class="form-control">
+                    @error('titre_promo')
+                        <span class="text-danger small"> {{ $message }} </span>
+                    @enderror
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label" for="multicol-username">Description </label>
+
+                    <textarea type="text" wire:model="description_promo" placeholder="La description" rows="2" class="form-control"> </textarea>
+                    @error('description_promo')
+                        <span class="text-danger small"> {{ $message }} </span>
+                    @enderror
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="multicol-username">Image(630*250) </label>
+
+                    <input type="file" wire:model="image_promo" accept="image/*"
+                        placeholder="Cargez les images" class="form-control">
+                    @error('image_promo')
+                        <span class="text-danger small"> {{ $message }} </span>
+                    @enderror
+                </div>
+                <br><br>
+
+                <div class="text-center  card my-auto p-1 mb-3">
+                    <h6 class="text-red">
+                        Section 2
+                    </h6>
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label" for="multicol-username">Titre</label>
+
+                    <input type="text" wire:model="titre_promo1" placeholder="Le titre " rows="1"
+                        class="form-control">
+                    @error('titre_promo1')
+                        <span class="text-danger small"> {{ $message }} </span>
+                    @enderror
+                </div>
+
+                <div class="col-md-12">
+                    <label class="form-label" for="multicol-username">Description </label>
+
+                    <textarea type="text" wire:model="description_promo1" placeholder="La description" rows="2"
+                        class="form-control"> </textarea>
+                    @error('description_promo1')
+                        <span class="text-danger small"> {{ $message }} </span>
+                    @enderror
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label" for="multicol-username">Image(630*250) </label>
+
+                    <input type="file" wire:model="image_promo1" accept="image/*"
+                        placeholder="Cargez les images" class="form-control">
+                    @error('image_promo1')
+                        <span class="text-danger small"> {{ $message }} </span>
+                    @enderror
+                </div>
+
+                <br><br>
+
+
             </div>
 
             <hr class="my-6 mx-n4" />
@@ -219,6 +294,7 @@
                     Section 1
                 </h6>
             </div>
+
             <div class="row g-6">
                 <div class="col-md-12">
                     <label class="form-label" for="multicol-username">Titre</label>

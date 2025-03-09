@@ -59,7 +59,15 @@ class config extends Model
         'instagram',
         'linkedin',
         'tiktok',
-        'slogan'
+        'slogan',
+        'titre_promo',
+        'description_promo',
+        'image_promo',
+
+
+        'titre_promo1',
+        'description_promo1',
+        'image_promo1',
 
     ];
 }

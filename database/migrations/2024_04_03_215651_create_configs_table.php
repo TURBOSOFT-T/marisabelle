@@ -67,6 +67,16 @@ return new class extends Migration
             $table->string('image_login')->nullable();
             $table->string('image_register')->nullable();
             $table->decimal("marge", 10,2)->nullable();
+
+
+            $table->text('titre_promo')->nullable();
+            $table->text('description_promo')->nullable();
+            $table->string('image_promo')->nullable();
+
+
+            $table->text('titre_promo1')->nullable();
+            $table->text('description_promo1')->nullable();
+            $table->string('image_promo1')->nullable();
             $table->timestamps();
         });
 
