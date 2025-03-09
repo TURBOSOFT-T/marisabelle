@@ -71,7 +71,7 @@
                                 <div class="shop-btn d-flex justify-content-center">
                                     <a href="{{ route('shop') }}" class="axil-btn btn-bg-primary2 right-icon">
 
-                                        {{ \App\Helpers\TranslationHelper::TranslateText('Voir boutique') }}
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Découvrir la collection') }}
                                         <i class="fal fa-long-arrow-right"></i>
                                     </a>
                                 </div>
