@@ -130,7 +130,14 @@
                                 </div>
                                 <!-- End .row -->
                                 <div class="row row--15">
-                                 
+                                 <style>
+                                    img.product-image {
+    width: 200px;  /* Largeur fixe */
+    height: 200px; /* Hauteur fixe */
+    object-fit: cover; /* Cela garantit que l'image couvre l'espace sans déformer l'image */
+}
+
+                                 </style>
 
                                         @foreach ($produits as $key => $produit)
                                             <div class="col-xl-4 col-sm-6">
@@ -138,7 +145,7 @@
                                                     <div class="thumbnail">
                                                         <a
                                                             href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
-                                                            <img src="{{ Storage::url($produit->photo) }}" 
+                                                            <img  class="product-image" src="{{ Storage::url($produit->photo) }}" 
                                                           
                                                                 alt="{{ $produit->nom }}"
                                                                 style="max-width: 300px; max-height: 300px;">
