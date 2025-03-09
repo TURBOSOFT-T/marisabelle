@@ -31,6 +31,18 @@
         height: 300px; /* Hauteur plus petite pour mobile */
     }
 }
+
+
+.main-slider-content {
+    text-align: left; /* Aligner le texte à gauche */
+    margin-left: 0;   /* Réduire tout espace à gauche */
+    padding-left: 20px; /* Ajouter un peu d'espace si nécessaire */
+}
+
+.shop-btn {
+    text-align: left; /* Aligner le bouton à gauche également */
+}
+
    </style>
 
         <div class="container-fluid px-0 mb-5">
@@ -1770,8 +1782,11 @@
         <div class="axil-section-gap">
             <div class="container">
                 <div class="section-title-wrapper section-title-center">
-                    <span class="title-highlighter highlighter-primary"><i class="fas fa-fire"></i> Regular Post</span>
-                    <h3 class="title">Latest NFT News</h3>
+                    <span class="title-highlighter highlighter-primary"><i class="fas fa-fire"></i>    {{ \App\Helpers\TranslationHelper::TranslateText('Les actualités') }}</span>
+                    <h3 class="title">
+
+                         {{ \App\Helpers\TranslationHelper::TranslateText('Dernières actualités') }}
+                    </h3>
                 </div>
                 <div class="row g-5">
                     @foreach($events as $event)
