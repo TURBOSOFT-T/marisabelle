@@ -168,8 +168,8 @@
                                                     <td data-label="Image">
                                                         {{ $commande->contenus->count() }}
                                                     </td>
-                                                    <td data-label="Order ID"> {{ $commande->montant() }} DT</td>
-                                                    <td data-label="Product Details"> {{ $commande->frais ?? 0 }} DT</td>
+                                                    <td data-label="Order ID"> {{ $commande->montant() }}  <x-devise></x-devise></td>
+                                                    <td data-label="Product Details"> {{ $commande->frais ?? 0 }}  <x-devise></x-devise></td>
                                                     <td data-label="price"> {{ $commande->created_at }}</td>
                                                     <td data-label="Status" class="text-green"> {{ $commande->statut }}
                                                     </td>

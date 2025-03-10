@@ -55,10 +55,10 @@
                                                                         {{ $commande->contenus->count() }}
                                                                     </td>
                                                                     <td >
-                                                                        {{ $commande->montant() }} DT
+                                                                        {{ $commande->montant() }}  <x-devise></x-devise>
                                                                     </td>
                                                                     <td>
-                                                                        {{ $commande->frais ?? 0}} DT
+                                                                        {{ $commande->frais ?? 0}}  <x-devise></x-devise>
                                                                     </td>
                                                                     <td>
                                                                         {{ $commande->created_at }}
