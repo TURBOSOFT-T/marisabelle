@@ -349,9 +349,23 @@
 
 
 
-                                <li class="menu-item">
+                               {{--  <li class="menu-item">
                                     <a href="{{ route('shop') }}">{{ __('boutique') }}</a>
                                 </li>
+ --}}
+                                <li class="menu-item-has-children">
+                                    <a  href="{{ route('shop') }}">{{ __('boutique') }}</a>
+                                    <ul class="axil-submenu">
+                                        @foreach ($categories as $category)
+                                        <li><a href="/category/{{ $category->id }}"
+                                            class="{{ isset($current_category) && $current_category->id === $category->id ? 'selected' : '' }}">
+
+                                           
+                                            {{ \App\Helpers\TranslationHelper::TranslateText($category->nom ?? '') }}    
+                                        </a></li>
+                                 
+                                        @endforeach
+                                    </ul>
                                 <li><a href="{{ route('about') }}">
                                         {{ \App\Helpers\TranslationHelper::TranslateText('A propos de nous') }}</a>
                                 </li>
