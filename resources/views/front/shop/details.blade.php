@@ -328,17 +328,17 @@
                                             href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
                                             <img style="border-radius: 8px; width: 300px; height: 200px; object-fit: cover;"   src="{{ Storage::url($produit->photo) }}" alt="Product Images">
 
-                                            <style>
+                                           {{--  <style>
                                                 .top-left {
                                                     position: absolute;
                                                     top: 8px;
                                                     left: 16px;
                                                     color: red;
                                                 }
-                                            </style>
+                                            </style> --}}
 
                                             <div class="top-left"
-                                                style="background-color:#EFB121;color: white;">
+                                                style="background-color:#fd0d49;color: white;">
                                                 <span>
                                                     @if ($produit->inPromotion())
                                                         <span>
@@ -443,7 +443,7 @@
 $(document).ready(function() {
     // Initialisation de Slick
     $('.recent-product-activation').slick({
-        slidesToShow: 4, // Nombre de produits visibles à la fois
+        slidesToShow: 1, // Nombre de produits visibles à la fois
         slidesToScroll: 1, // Nombre de produits à défiler à chaque fois
         infinite: true, // Défilement en boucle
         autoplay: true, // Défilement automatique
