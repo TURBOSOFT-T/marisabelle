@@ -10,6 +10,47 @@
 
 
         <main class="main-wrapper">
+
+            <style>
+                @keyframes blinkText {
+                    0% {
+                        opacity: 1;
+                    }
+
+                    50% {
+                        opacity: 0;
+                    }
+
+                    100% {
+                        opacity: 1;
+                    }
+                }
+
+                .blink-text {
+                    animation: blinkText 1s infinite;
+                }
+
+                @keyframes blinkColor {
+                    0% {
+                        opacity: 1;
+                        color: red;
+                    }
+
+                    50% {
+                        opacity: 0;
+                        color: blue;
+                    }
+
+                    100% {
+                        opacity: 1;
+                        color: red;
+                    }
+                }
+
+                .blink-color {
+                    animation: blinkColor 1s infinite;
+                }
+            </style>
             <style>
                 .carousel-item img {
                     height: 600px;
@@ -158,8 +199,8 @@
                     <div class="section-title-wrapper">
                         <span class="title-highlighter highlighter-secondary"><i class="far fa-shopping-basket"></i>
                             {{ \App\Helpers\TranslationHelper::TranslateText('Ce mois') }}
-                            </span>
-                        <h2 class="title">
+                        </span>
+                        <h2 class="title blink-text">
                             {{ \App\Helpers\TranslationHelper::TranslateText('Les nouveautés') }}
                         </h2>
                     </div>
@@ -314,8 +355,8 @@
                     <div class="section-title-wrapper">
                         <h4> <span class="axil-breadcrumb-item1 active" aria-current="page"> <i class="far fa-tags"></i>
                                 {{ \App\Helpers\TranslationHelper::TranslateText('Categories') }}</span> </h4>
-                        <h1 class="title">
-                            {{ \App\Helpers\TranslationHelper::TranslateText('Nos categories') }}
+                        <h1 class="title blink-text">
+                            {{ \App\Helpers\TranslationHelper::TranslateText('Les categories') }}
                         </h1>
                     </div>
                     <div class="categrie-product-activation slick-layout-wrapper--15 axil-slick-arrow  arrow-top-slide">
@@ -349,15 +390,29 @@
             <div class="axil-product-area bg-color-white axil-section-gap">
                 <div class="container">
                     <div class="section-title-wrapper">
+                        <h4>
+                            <span class="axil-breadcrumb-item1 active" aria-current="page">
+                                <i class="far fa-shopping-basket"></i>
+                                <span
+                                    class="blink-text">{{ \App\Helpers\TranslationHelper::TranslateText('Nos produits') }}</span>
+                            </span>
+                        </h4>
 
-                        <h4> <span class="axil-breadcrumb-item1 active" aria-current="page"> <i
+                        <h1 class="title">
+                            <span
+                                class="blink-text">{{ \App\Helpers\TranslationHelper::TranslateText('Parcourir nos produits') }}</span>
+                        </h1>
+
+
+                        {{--  <h4> <span class="axil-breadcrumb-item1 active" aria-current="page"> <i
                                     class="far fa-shopping-basket"></i>
                                 {{ \App\Helpers\TranslationHelper::TranslateText('Nos produits') }}</span> </h4>
 
-                        <h1 class="title">
+                        <h1 class="title" style="margin-bottom: 1.875em">
                             {{ \App\Helpers\TranslationHelper::TranslateText('Parcourir nos produits ') }}
-                        </h1>
+                        </h1> --}}
                     </div>
+
                     <div
                         class="explore-product-activation slick-layout-wrapper slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide">
                         <div class="slick-single-layout">
@@ -752,7 +807,8 @@
                 <div class="container">
                     <div class="section-title-wrapper section-title-center">
 
-                        <h2 class="title">{{ \App\Helpers\TranslationHelper::TranslateText('Produits en promotion') }}💥
+                        <h2 class="title blink-text">
+                            {{ \App\Helpers\TranslationHelper::TranslateText('Produits en promotion') }}💥
                         </h2>
                     </div>
                     <style>
