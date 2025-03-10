@@ -213,7 +213,7 @@ if($connecte){
 
   if (!$existingUsersWithEmail) {
    
-    Mail::to($user->email)->send(new FirstOrder($user));
+   // Mail::to($user->email)->send(new FirstOrder($user));
 
  
     $user->save();
@@ -244,7 +244,7 @@ if($connecte){
     }
 
     //envoyer les emails
-      $this->sendOrderConfirmationMail($order);
+     // $this->sendOrderConfirmationMail($order);
      
     //effacer le panier
    session()->forget('cart');
