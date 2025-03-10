@@ -144,328 +144,138 @@
                     <h2 class="title">Les nouveatés</h2>
                 </div>
                 <div class="new-arrivals-product-activation-2 slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide product-slide-mobile">
+                    @foreach ($rescentesproduits as $produit)
                     <div class="slick-single-layout">
                         <div class="axil-product product-style-three">
                             <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="1500" src="assets/images/product/furniture/product-10.png" alt="Product Images">
+                                <a href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
+                                    <img style="border-radius: 8px; width: 300px; height: 200px; object-fit: cover;"  
+                                     data-sal="zoom-out" data-sal-delay="200" data-sal-duration="800" loading="lazy" class="main-img" border-radius="8px"  src="{{ Storage::url($produit->photo) }}"  alt="Product Images">
+                                    <img  style="border-radius: 8px; width: 300px; height: 200px; object-fit: cover;"  
+                                     class="hover-img" border-radius="8px" src="{{ Storage::url($produit->photo) }}"  alt="Product Images">
                                 </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(64)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Stylish Chair</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$30</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="1500" src="assets/images/product/furniture/product-11.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(33)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Office Table</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$80</span>
-                                        <span class="price old-price">$100</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="300" data-sal-duration="1500" src="assets/images/product/furniture/product-12.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(23)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">WoodeN Chair</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$40</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="400" data-sal-duration="1500" src="assets/images/product/furniture/product-13.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(30)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Reading Table</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$30</span>
-                                        <span class="price old-price">$50</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="1500" src="assets/images/product/furniture/product-14.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(13)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Tea Table</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$40</span>
-                                        <span class="price old-price">$60</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
 
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="200" data-sal-duration="1500" src="assets/images/product/furniture/product-15.png" alt="Product Images">
-                                </a>
+                                <style>
+                                    .top-left {
+                                        position: absolute;
+                                        top: 8px;
+                                        right: 18px;
+                                        color: #EFB121;
+                                    }
+
+                                </style>
+
+                                <div class="top-left" style="background-color: #EFB121;color: white;">
+                                    <span>
+                                        @if ($produit->inPromotion())
+                                        <span>
+                                            -{{ $produit->inPromotion()->pourcentage }}%</span>
+                                        @endif
+                                    </span>
+                                </div>
                                 <div class="product-hover-action">
                                     <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
+                                        {{-- <li class="quickview"><a href="#" data-bs-toggle="modal"
+                                                            data-bs-target="#{{ $produit->id }}"><i class="far fa-eye"></i></a></li> --}}
+                                        <li class="select-option2">
+                                            <a onclick="AddToCart( {{ $produit->id }} )">
+                                                {{ \App\Helpers\TranslationHelper::TranslateText('Ajouter au panier') }}
+                                            </a>
+                                        </li>
+
+
+                                        @if (Auth()->user())
+
+                                        @php
+
+                                        $count = DB::table('favoris')
+                                        ->where('id_user', Auth()->user()->id)
+                                        ->where('id_produit', $produit->id)
+                                        ->count();
+                                        @endphp
+
+
+                                        <li class="wishlist"><a onclick="AddFavoris({{ $produit->id }})" @if ($count==0) class="" style="color:#000000" @else class="" style="color: #dc3545; background-color:#dc3545" @endif>
+
+                                                <i class="far fa-heart"></i></a></li>
+                                        @endif
+
+
+
+                                        <style>
+                                            .select-option2 {
+                                                background-color: #5EA13C;
+                                                color: #ffffff;
+                                                border: none;
+                                                padding: 10px 20px;
+                                                border-radius: 5px;
+                                                text-decoration: none;
+                                            }
+
+                                            .favori-actif {
+                                                color: red;
+                                                /* Changez la couleur selon votre besoin */
+                                            }
+
+                                        </style>
+
                                     </ul>
                                 </div>
                             </div>
                             <div class="product-content">
                                 <div class="inner">
                                     <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(13)</span>
+
                                     </div>
-                                    <h5 class="title"><a href="single-product.html">Small Drawer</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$30</span>
-                                        <span class="price old-price">$50</span>
+
+                                    <div class="">
+                                        <h5 class="title"><a href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
+                                                {{ \App\Helpers\TranslationHelper::TranslateText( Str::limit($produit->nom, 15)) }}
+
+                                            </a>
+                                        </h5>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="300" data-sal-duration="1500" src="assets/images/product/furniture/product-8.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(13)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Denim Black Jacket</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$40</span>
+                                    <div class="product__price__wrapper">
+                                        <h6 class="product-price--main">
+
+
+                                            @if ($produit->inPromotion())
+                                            <div class="row">
+                                                <div class="col-sm-6 col-6">
+
+                                                    <b class="text-success" style="color: #4169E1">
+                                                        {{ $produit->getPrice() }} <x-devise></x-devise> 
+                                                    </b>
+                                                </div>
+
+                                                <div class="col-sm-6 col-6 text-end">
+                                                    <strike>
+
+
+                                                        <span style="font-size: 1.7rem; color: #dc3545; font-weight: bold;">
+                                                            {{ $produit->prix }} <x-devise></x-devise> 
+                                                        </span>
+
+
+                                                    </strike>
+                                                </div>
+                                                @else
+                                                {{-- {{ $produit->getPrice() }}DT --}}
+
+
+                                                <span class="price current-price" style="font-size: 1.7rem;">
+                                                    {{ $produit->getPrice() }} <x-devise></x-devise> 
+                                                    </b></span>
+                                                @endif
+
+
+                                        </h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="400" data-sal-duration="1500" src="assets/images/product/furniture/product-9.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(13)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Long Sleeve Sweater</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$30</span>
-                                        <span class="price old-price">$40</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
-                    <div class="slick-single-layout">
-                        <div class="axil-product product-style-three">
-                            <div class="thumbnail">
-                                <a href="single-product.html">
-                                    <img data-sal="zoom-out" data-sal-delay="100" data-sal-duration="1500" src="assets/images/product/furniture/product-6.png" alt="Product Images">
-                                </a>
-                                <div class="product-hover-action">
-                                    <ul class="cart-action">
-                                        <li class="wishlist"><a href="wishlist.html"><i class="far fa-heart"></i></a></li>
-                                        <li class="select-option"><a href="cart.html">Add to Cart</a></li>
-                                        <li class="quickview"><a href="#" data-bs-toggle="modal" data-bs-target="#quick-view-modal"><i class="far fa-eye"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="product-content">
-                                <div class="inner">
-                                    <div class="product-rating">
-                                        <span class="icon">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="far fa-star"></i>
-                                </span>
-                                        <span class="rating-number">(13)</span>
-                                    </div>
-                                    <h5 class="title"><a href="single-product.html">Denim Black Jacket</a></h5>
-                                    <div class="product-price-variant">
-                                        <span class="price current-price">$40</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End .slick-single-layout -->
+                    @endforeach
                 </div>
             </div>
         </div>

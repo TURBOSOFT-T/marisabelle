@@ -30,6 +30,7 @@ class HomeController extends Controller
         }
        $produits = produits::select('*')->take(12)->get();
        $searchproducts = produits::select('*')->latest()->take(10)->get();
+
        $rescentesproduits = produits::select('*')->take(10)->get();
       // $produitspromotions = produits::select('*')->
     
