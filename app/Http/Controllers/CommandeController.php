@@ -118,7 +118,7 @@ class CommandeController extends Controller
     
 
     ]); 
-    dd($request->all());
+   // dd($request->all());
 
     $connecte = Auth::user();
     $configs = config::firstOrFail();
