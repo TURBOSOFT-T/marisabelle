@@ -359,9 +359,7 @@
                                                         onclick="AddToCart( {{ $produit->id }} )">
                                                         {{ \App\Helpers\TranslationHelper::TranslateText('Ajouter au panier') }}
                                                         </a></li>
-                                                {{-- <li class="quickview"><a href="#" data-bs-toggle="modal"
-                                                        data-bs-target="#quick-view-modal"><i
-                                                            class="far fa-eye"></i></a></li> --}}
+                                               
 
                                             </ul>
                                         </div>
@@ -388,9 +386,6 @@
 
 
 
-                                                                {{-- <span style="font-size: 1.2rem; color: #dc3545; font-weight: bold;">
-                                                            {{ $produit->prix }} DT
-                                                    </span> --}}
                                                                 <span class="price old-price"
                                                                     style="position: relative; font-size: 1.2rem; color: #dc3545; font-weight: bold;">
                                                                     {{ $produit->prix }} <x-devise></x-devise> 
