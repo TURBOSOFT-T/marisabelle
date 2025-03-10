@@ -981,6 +981,14 @@
 
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-lg-12 text-center mt--20 mt_sm--0">
+                        <a href="{{ url('actualites') }}" class="axil-btn btn-bg-primary2 btn-load-more">
+
+                            {{ \App\Helpers\TranslationHelper::TranslateText('Voir toutes les actualités') }}
+                        </a>
+                    </div>
+                </div>
             </div>
 
 
