@@ -80,7 +80,8 @@ Route::get('/decroissant', [HomeController::class, 'decroissant'])
 ->name('decroissant');
 Route::get('/croissant', [HomeController::class, 'croissant'])
 ->name('croissant');
-
+Route::get('/promotion', [HomeController::class, 'promotion'])
+->name('promotion');
 //Route::get('/search-product',[HomeController::class,'search_products'])->name('search.products');
 Route::get('/sort-by',[HomeController::class,'sort_by'])->name('sort.by');
 Route::get('search', [HomeController::class, 'search'])->name("search");

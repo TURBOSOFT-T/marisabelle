@@ -118,6 +118,7 @@
                                                     <option value="{{ url('croissant') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Croissant') }}</option>
 
                                                     <option value="{{ url('decroissant') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Décroissant') }}</option>
+                                                    <option value="{{ url('promotion') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Promotions') }}</option>
                                                 </select>
                                                 <!-- End Single Select  -->
                                             </div>

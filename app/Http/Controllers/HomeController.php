@@ -162,7 +162,19 @@ class HomeController extends Controller
         $configs= config::all();
         return view('front.shop.index',compact('produits', 'categories','configs'));
     }
-    
+      
+
+    public function promotion(){
+        $produits= produits:: select('*')
+      -> whereHas('promotion')
+        ->orderBy('prix','ASC')
+
+        ->paginate(24);;
+      //  $categories = Category::with('produits')->get();
+      $categories =Category::has('produits')->get();
+        $configs= config::all();
+        return view('front.shop.index',compact('produits', 'categories','configs'));
+    }
 
 
     public function search(SearchRequest $request)

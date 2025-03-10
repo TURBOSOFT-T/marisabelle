@@ -90,7 +90,10 @@ class produits extends Model
     {
         return $this->hasMany(views::class, 'id_produit');
     }
-
+    public function promotion()
+    {
+        return $this->belongsTo(promotions::class, 'id_promotion');
+    }
 
    
 
