@@ -111,6 +111,7 @@
                         .logo img {
                             width: 250px;
                             height: 50;
+                            margin-top: 60px;
                         }
 
                         @media (max-width: 768px) {
@@ -332,8 +333,8 @@
                         <nav class="mainmenu-nav">
                             <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
                             <div class="mobile-nav-brand">
-                                <a href="index.html" class="logo">
-                                    <img src="assets/images/logo/logo.png" alt="Site Logo">
+                                <a href="{{ route('home') }}"  class="logo">
+                                    <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
                                 </a>
                             </div>
                             <ul class="mainmenu">
