@@ -6,7 +6,7 @@ use App\Models\commandes;
 use App\Models\historiques_stock;
 use App\Models\config;
 use App\Models\historiques_connexion;
-use App\Models\{produits, Category,Marque, Contact, favoris, Service, Coupon, Testimonial};
+use App\Models\{produits, Category,Marque, Contact, favoris, Service, Coupon, Event, Testimonial};
 use App\Models\User;
 use App\Models\views;
 use Illuminate\Http\Request;
@@ -146,6 +146,7 @@ class AdminController extends Controller
         $total_visites = views::whereBetween('created_at', [$date_debut, $date_fin])->count();
         $total_commandes = commandes::whereBetween('created_at', [$date_debut, $date_fin])->where('statut', 'payée')->get(['id']);
         $total_produits = produits::count();
+        $total_actualites = Event::count();
         $totalDesCommandes = 0;
         foreach ($total_commandes as $command) {
             $totalDesCommandes += $command->montant();
@@ -242,6 +243,7 @@ class AdminController extends Controller
             ->with('total_visites', $total_visites)
             ->with('total_commandes', $total_commandes)
             ->with('total_produits', $total_produits)
+            ->with('total_actualites', $total_actualites)
             ->with("statistique_commandes_graph", $statistique_commandes_graph)
             ->with("commandes", $commandes)
             ->with('nombre_total_commande', $nombre_total_commande)
