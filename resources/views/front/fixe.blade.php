@@ -22,17 +22,17 @@
     ============================================ -->
 
     <!-- Bootstrap CSS -->
- <!-- Bootstrap CSS -->
- <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
- <link rel="stylesheet" href="/assets/css/vendor/font-awesome.css">
- <link rel="stylesheet" href="/assets/css/vendor/flaticon/flaticon.css">
- <link rel="stylesheet" href="/assets/css/vendor/slick.css">
- <link rel="stylesheet" href="/assets/css/vendor/slick-theme.css">
- <link rel="stylesheet" href="/assets/css/vendor/jquery-ui.min.css">
- <link rel="stylesheet" href="/assets/css/vendor/sal.css">
- <link rel="stylesheet" href="/assets/css/vendor/magnific-popup.css">
- <link rel="stylesheet" href="/assets/css/vendor/base.css">
- <link rel="stylesheet" href="/assets/css/style.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/vendor/font-awesome.css">
+    <link rel="stylesheet" href="/assets/css/vendor/flaticon/flaticon.css">
+    <link rel="stylesheet" href="/assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="/assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="/assets/css/vendor/jquery-ui.min.css">
+    <link rel="stylesheet" href="/assets/css/vendor/sal.css">
+    <link rel="stylesheet" href="/assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="/assets/css/vendor/base.css">
+    <link rel="stylesheet" href="/assets/css/style.min.css">
 
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -53,322 +53,327 @@
     <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
-<!-- Start Header -->
-<header class="header axil-header header-style-4">
-    <div class="header-top-campaign">
-        <div class="container position-relative">
-            <div class="campaign-content">
-                <div class="campaign-countdown"></div>
-                <p>Open Doors To A World Of Fashion Get <a href="#">Get Your Offer</a></p>
+    <a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
+    <!-- Start Header -->
+    <header class="header axil-header header-style-4">
+        <div class="header-top-campaign">
+            <div class="container position-relative">
+                <div class="campaign-content">
+                    <div class="campaign-countdown"></div>
+                    <p>Open Doors To A World Of Fashion Get <a href="#">Get Your Offer</a></p>
+                </div>
             </div>
+            <button class="remove-campaign"><i class="fal fa-times"></i></button>
         </div>
-        <button class="remove-campaign"><i class="fal fa-times"></i></button>
-    </div>
-    <!-- Start Header Top Area  -->
-    <div class="axil-header-top">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4 col-12">
-                    <div class="header-top-dropdown dropdown-box-style">
-                        <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                USD
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">USD</a></li>
-                                <li><a class="dropdown-item" href="#">AUD</a></li>
-                                <li><a class="dropdown-item" href="#">EUR</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown">
-                            <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                EN
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">EN</a></li>
-                                <li><a class="dropdown-item" href="#">ARB</a></li>
-                                <li><a class="dropdown-item" href="#">SPN</a></li>
-                            </ul>
+        <!-- Start Header Top Area  -->
+        <div class="axil-header-top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-4 col-12">
+                        <div class="header-top-dropdown dropdown-box-style">
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    USD
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">USD</a></li>
+                                    <li><a class="dropdown-item" href="#">AUD</a></li>
+                                    <li><a class="dropdown-item" href="#">EUR</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    EN
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">EN</a></li>
+                                    <li><a class="dropdown-item" href="#">ARB</a></li>
+                                    <li><a class="dropdown-item" href="#">SPN</a></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <br> <br>
-                <div class="col-md-4 col-5">
-                    <div class="header-brand">
-                        <a  href="{{ route('home') }}" class="logo logo-dark">
-                            <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
-                        </a>
-                        <a  href="{{ route('home') }}" class="logo logo-light">
-                            <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
-                        </a>
+                    <br> <br>
+                    <div class="col-md-4 col-5">
+                        <div class="header-brand">
+                            <a href="{{ route('home') }}" class="logo logo-dark">
+                                <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
+                            </a>
+                            <a href="{{ route('home') }}" class="logo logo-light">
+                                <img src="{{ Storage::url($config->logo ?? ' ') }}" alt="Site Logo">
+                            </a>
+                        </div>
                     </div>
-                </div>
 
-                <style>
-                    .logo img {
-    width: 250px;
-    height: 50;
-}
+                    <style>
+                        .logo img {
+                            width: 250px;
+                            height: 50;
+                        }
 
-@media (max-width: 768px) {
-    .logo img {
-        width: 100px; /* Réduction de la taille sur mobile */
-    }
-}
-
-                </style>
-                <div class="col-md-4 col-7">
-                    <div class="header-action">
-                        <ul class="action-list">
-                            <li class="axil-search">
-                                <a href="javascript:void(0)" class="header-search-icon" title="Search">
-                                    <i class="flaticon-magnifying-glass"></i>
-                                </a>
-                            </li>
-                            <style>
-                                .axil-search:hover {
-                                    background-color: #f0f0f0;
-                                    /* Remplacez par la couleur souhaitée */
-                                }
-                            </style>
-
-                            <li class="shopping-cart">
-                                <a href="#" class="cart-dropdown-btn">
-                                    <span class="cart-count" id="count-panier-span">00</span>
-                                    <i class="far fa-shopping-cart"></i>
-                                </a>
-                            </li>
-                            <li class="wishlist">
-                                <a href="{{ route('favories') }}">
-                                    <i class="far fa-heart"></i>
-                                </a>
-                            </li>
-                            <li class="my-account">
-                                <a href="javascript:void(0)">
-                                    <i class="far fa-user"></i>
-                                </a>
-                                <div class="my-account-dropdown">
-
-                                    @if (Auth()->user())
-                                        <ul>
-                                            @if (auth()->user()->role != 'client')
-                                                <li><a href="{{ url('dashboard') }}">Dashboard</a>
-                                                </li>
-                                            @endif
-                                            <li>
-                                                <a href="{{ route('account') }}">
-                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Mon compte') }}
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('favories') }}">
-                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Mes favoris') }}</a>
-                                            </li>
-                                            <li>
-                                                <a href="{{ route('cart') }}">
-                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Mon panier') }}</a>
-                                            </li>
-                                            <li>
-
-                                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault();   document.getElementById('logout-form').submit();">
-                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Déconnexion') }}
-                                                </a>
-
-                                                <form id="logout-form" action="{{ route('logout') }}"
-                                                    method="POST" class="d-none">
-                                                    @csrf
-                                                </form>
-                                            </li>
-
-
-
-
-                                        </ul>
-                                    @else
-                                        <div class="login-btn">
-                                            <a href="{{ url('login') }}" class="axil-btn btn-bg-primary2">
-                                                {{ \App\Helpers\TranslationHelper::TranslateText('Connexion') }}</a>
-                                        </div>
-
-                                        <div class="reg-footer text-center">
-                                            {{ \App\Helpers\TranslationHelper::TranslateText('Pas de compte') }}?
-                                            <a href="{{ url('register') }}" class="btn-link">
-                                                {{ \App\Helpers\TranslationHelper::TranslateText('Inscrivez vous ici') }}.</a>
-                                        </div>
-                                    @endif
-
-                                </div>
-                            </li>
-                            <li>
-
-                                <div class="custom-dropdown">
-                                    <form action="{{ route('locale.change') }}" method="POST">
-                                        @csrf
-                                        <div class="dropdown">
-                                            <button class="dropbtn">
-                                                @if (app()->getLocale() == 'fr')
-                                                    <img src="https://img.icons8.com/color/20/france-circular.png"
-                                                        alt="fr"> 
-                                                @elseif(app()->getLocale() == 'en')
-                                                    <img src="https://img.icons8.com/color/20/great-britain-circular.png"
-                                                        alt="en"> 
-                                                @else
-                                                    <img src="https://img.icons8.com/color/20/france-circular.png"
-                                                        alt="fr">
-                                                @endif
-                                            </button>
-                                            <div class="dropdown-content">
-                                                <button type="submit" name="locale" value="fr"
-                                                    class="dropdown-item">
-                                                    <img src="https://img.icons8.com/color/20/france-circular.png"
-                                                        alt="fr">
-                                                    Français
-                                                </button>
-                                                <button type="submit" name="locale" value="en"
-                                                    class="dropdown-item">
-                                                    <img src="https://img.icons8.com/color/20/great-britain-circular.png"
-                                                        alt="en">
-                                                    English
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-
-
-
+                        @media (max-width: 768px) {
+                            .logo img {
+                                width: 100px;
+                                /* Réduction de la taille sur mobile */
+                            }
+                        }
+                    </style>
+                    <div class="col-md-4 col-7">
+                        <div class="header-action">
+                            <ul class="action-list">
+                                <li class="axil-search">
+                                    <a href="javascript:void(0)" class="header-search-icon" title="Search">
+                                        <i class="flaticon-magnifying-glass"></i>
+                                    </a>
+                                </li>
                                 <style>
-                                    .custom-dropdown {
-                                        position: relative;
-                                        display: inline-block;
-
-
-                                    }
-
-                                    .dropbtn {
-                                        background-color: #f7fef7;
-                                        color: white;
-                                        padding: 10px;
-                                        font-size: 16px;
-                                        border: none;
-                                        cursor: pointer;
-                                    }
-
-                                    .dropdown-content {
-                                        display: none;
-                                        position: absolute;
-                                        background-color: #f9f9f9;
-                                        min-width: 160px;
-                                        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-                                        z-index: 1;
-                                    }
-
-                                    .dropdown-content .dropdown-item {
-                                        background-color: white;
-                                        border: none;
-                                        width: 100%;
-                                        text-align: left;
-                                        padding: 8px 16px;
-                                        cursor: pointer;
-                                        display: flex;
-                                        align-items: center;
-                                    }
-
-                                    .dropdown-content .dropdown-item img {
-                                        margin-right: 8px;
-                                    }
-
-                                    .dropdown-content .dropdown-item:hover {
-                                        background-color: #f8f3f3;
-                                    }
-
-                                    .dropdown:hover .dropdown-content {
-                                        display: block;
-                                    }
-
-                                    .dropdown:hover .dropbtn {
-                                        background-color: #eef4ee;
-                                    }
-
-                                    /* Responsive adjustments */
-                                    @media (max-width: 600px) {
-                                        .dropbtn {
-                                            font-size: 14px;
-                                            padding: 8px;
-                                        }
-
-                                        .dropdown-content .dropdown-item {
-                                            font-size: 14px;
-                                            padding: 8px 16px;
-                                        }
+                                    .axil-search:hover {
+                                        background-color: #f0f0f0;
+                                        /* Remplacez par la couleur souhaitée */
                                     }
                                 </style>
 
-                            </li>
-                            <li class="axil-mobile-toggle">
-                                <button class="menu-btn mobile-nav-toggler">
-                                    <i class="flaticon-menu-2"></i>
-                                </button>
-                            </li>
-                        </ul>
+                                <li class="shopping-cart">
+                                    <a href="#" class="cart-dropdown-btn">
+                                        <span class="cart-count" id="count-panier-span">00</span>
+                                        <i class="far fa-shopping-cart"></i>
+                                    </a>
+                                </li>
+                                <li class="wishlist">
+                                    <a href="{{ route('favories') }}">
+                                        <i class="far fa-heart"></i>
+                                    </a>
+                                </li>
+                                <li class="my-account">
+                                    <a href="javascript:void(0)">
+                                        <i class="far fa-user"></i>
+                                    </a>
+                                    <div class="my-account-dropdown">
+
+                                        @if (Auth()->user())
+                                            <ul>
+                                                @if (auth()->user()->role != 'client')
+                                                    <li><a href="{{ url('dashboard') }}">Dashboard</a>
+                                                    </li>
+                                                @endif
+                                                <li>
+                                                    <a href="{{ route('account') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Mon compte') }}
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('favories') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Mes favoris') }}</a>
+                                                </li>
+                                                <li>
+                                                    <a href="{{ route('cart') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Mon panier') }}</a>
+                                                </li>
+                                                <li>
+
+                                                    <a class="dropdown-item" href="{{ route('logout') }}"
+                                                        onclick="event.preventDefault();   document.getElementById('logout-form').submit();">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Déconnexion') }}
+                                                    </a>
+
+                                                    <form id="logout-form" action="{{ route('logout') }}"
+                                                        method="POST" class="d-none">
+                                                        @csrf
+                                                    </form>
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        @else
+                                            <div class="login-btn">
+                                                <a href="{{ url('login') }}" class="axil-btn btn-bg-primary2">
+                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Connexion') }}</a>
+                                            </div>
+
+                                            <div class="reg-footer text-center">
+                                                {{ \App\Helpers\TranslationHelper::TranslateText('Pas de compte') }}?
+                                                <a href="{{ url('register') }}" class="btn-link">
+                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Inscrivez vous ici') }}.</a>
+                                            </div>
+                                        @endif
+
+                                    </div>
+                                </li>
+                                <li>
+
+                                    <div class="custom-dropdown">
+                                        <form action="{{ route('locale.change') }}" method="POST">
+                                            @csrf
+                                            <div class="dropdown">
+                                                <button class="dropbtn">
+                                                    @if (app()->getLocale() == 'fr')
+                                                        <img src="https://img.icons8.com/color/20/france-circular.png"
+                                                            alt="fr">
+                                                    @elseif(app()->getLocale() == 'en')
+                                                        <img src="https://img.icons8.com/color/20/great-britain-circular.png"
+                                                            alt="en">
+                                                    @else
+                                                        <img src="https://img.icons8.com/color/20/france-circular.png"
+                                                            alt="fr">
+                                                    @endif
+                                                </button>
+                                                <div class="dropdown-content">
+                                                    <button type="submit" name="locale" value="fr"
+                                                        class="dropdown-item">
+                                                        <img src="https://img.icons8.com/color/20/france-circular.png"
+                                                            alt="fr">
+                                                        Français
+                                                    </button>
+                                                    <button type="submit" name="locale" value="en"
+                                                        class="dropdown-item">
+                                                        <img src="https://img.icons8.com/color/20/great-britain-circular.png"
+                                                            alt="en">
+                                                        English
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+
+
+                                    <style>
+                                        .custom-dropdown {
+                                            position: relative;
+                                            display: inline-block;
+
+
+                                        }
+
+                                        .dropbtn {
+                                            background-color: #f7fef7;
+                                            color: white;
+                                            padding: 10px;
+                                            font-size: 16px;
+                                            border: none;
+                                            cursor: pointer;
+                                        }
+
+                                        .dropdown-content {
+                                            display: none;
+                                            position: absolute;
+                                            background-color: #f9f9f9;
+                                            min-width: 160px;
+                                            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                            z-index: 1;
+                                        }
+
+                                        .dropdown-content .dropdown-item {
+                                            background-color: white;
+                                            border: none;
+                                            width: 100%;
+                                            text-align: left;
+                                            padding: 8px 16px;
+                                            cursor: pointer;
+                                            display: flex;
+                                            align-items: center;
+                                        }
+
+                                        .dropdown-content .dropdown-item img {
+                                            margin-right: 8px;
+                                        }
+
+                                        .dropdown-content .dropdown-item:hover {
+                                            background-color: #f8f3f3;
+                                        }
+
+                                        .dropdown:hover .dropdown-content {
+                                            display: block;
+                                        }
+
+                                        .dropdown:hover .dropbtn {
+                                            background-color: #eef4ee;
+                                        }
+
+                                        /* Responsive adjustments */
+                                        @media (max-width: 600px) {
+                                            .dropbtn {
+                                                font-size: 14px;
+                                                padding: 8px;
+                                            }
+
+                                            .dropdown-content .dropdown-item {
+                                                font-size: 14px;
+                                                padding: 8px 16px;
+                                            }
+                                        }
+                                    </style>
+
+                                </li>
+                                <li class="axil-mobile-toggle">
+                                    <button class="menu-btn mobile-nav-toggler">
+                                        <i class="flaticon-menu-2"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Header Top Area  -->
+        <!-- End Header Top Area  -->
 
-    <!-- Start Mainmenu Area  -->
-    <div id="axil-sticky-placeholder"></div>
-    <div class="axil-mainmenu">
-        <div class="container">
-            <div class="header-navbar">
-                <div class="header-main-nav">
-                    <!-- Start Mainmanu Nav -->
-                    <nav class="mainmenu-nav">
-                        <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
-                        <div class="mobile-nav-brand">
-                            <a href="index.html" class="logo">
-                                <img src="assets/images/logo/logo.png" alt="Site Logo">
-                            </a>
-                        </div>
-                        <ul class="mainmenu">
-                           
-                            <li class="menu-item"><a href="{{ route('home') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Accueil') }}</a></li></a>
+        <!-- Start Mainmenu Area  -->
+        <div id="axil-sticky-placeholder"></div>
+        <div class="axil-mainmenu">
+            <div class="container">
+                <div class="header-navbar">
+                    <div class="header-main-nav">
+                        <!-- Start Mainmanu Nav -->
+                        <nav class="mainmenu-nav">
+                            <button class="mobile-close-btn mobile-nav-toggler"><i class="fas fa-times"></i></button>
+                            <div class="mobile-nav-brand">
+                                <a href="index.html" class="logo">
+                                    <img src="assets/images/logo/logo.png" alt="Site Logo">
+                                </a>
+                            </div>
+                            <ul class="mainmenu">
 
-                        </li>
+                                <li class="menu-item"><a href="{{ route('home') }}">
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Accueil') }}</a></li></a>
 
-
-                        </li class="menu-item">
-                        <li><a href="{{ route('about') }}">
-                                {{ \App\Helpers\TranslationHelper::TranslateText('A propos de nous') }}</a></li>
+                                </li>
 
 
-
-                        <li class="menu-item">
-                            <a href="{{ route('shop') }}">{{ __('boutique') }}</a>
-                        </li>
-                        <li class="menu-item"><a href="actualites">
-                                {{ \App\Helpers\TranslationHelper::TranslateText('Actualités') }}
-                            </a></li>
+                                </li class="menu-item">
+                               
 
 
-                        <li class="menu-item"><a href="{{ route('contact') }}">
-                                {{ \App\Helpers\TranslationHelper::TranslateText('Contact') }}</a></li>
+                                <li class="menu-item">
+                                    <a href="{{ route('shop') }}">{{ __('boutique') }}</a>
+                                </li>
+                                <li><a href="{{ route('about') }}">
+                                    {{ \App\Helpers\TranslationHelper::TranslateText('A propos de nous') }}</a>
+                            </li>
+
+                                <li class="menu-item"><a href="actualites">
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Actualités') }}
+                                    </a></li>
+
+
+                                <li class="menu-item"><a href="{{ route('contact') }}">
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('Contact') }}</a></li>
 
 
 
-                        </ul>
-                    </nav>
-                    <!-- End Mainmanu Nav -->
+                            </ul>
+                        </nav>
+                        <!-- End Mainmanu Nav -->
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- End Mainmenu Area  -->
-</header>
+        <!-- End Mainmenu Area  -->
+    </header>
 
 
 
@@ -436,18 +441,22 @@
 
     <style>
         .service-area {
-    background-color: #ece7e3; /* Remplacez cette couleur par votre couleur préférée */
-    padding: 50px 0;
-}
-.service-box {
-    background: #ffffff; /* Couleur blanche pour chaque box */
-    border-radius: 10px;
-    transition: 0.3s;
-}
-.service-box:hover {
-    background: #ffd9b3; /* Couleur au survol */
-}
+            background-color: #ece7e3;
+            /* Remplacez cette couleur par votre couleur préférée */
+            padding: 50px 0;
+        }
 
+        .service-box {
+            background: #ffffff;
+            /* Couleur blanche pour chaque box */
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .service-box:hover {
+            background: #ffd9b3;
+            /* Couleur au survol */
+        }
     </style>
 
     <footer class="axil-footer-area footer-style-2">
@@ -556,25 +565,29 @@
 
                                 <div class="col-xl-8">
                                     <div class="social-share scroll-social">
-                                        @if(!empty($config->facebook))
-                                            <a href="{{ $config->facebook }}" class="social-icon" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                        @if (!empty($config->facebook))
+                                            <a href="{{ $config->facebook }}" class="social-icon" target="_blank"
+                                                title="Facebook"><i class="fab fa-facebook-f"></i></a>
                                         @endif
-                                
-                                        @if(!empty($config->instagram))
-                                            <a href="{{ $config->instagram }}" class="social-icon" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+
+                                        @if (!empty($config->instagram))
+                                            <a href="{{ $config->instagram }}" class="social-icon" target="_blank"
+                                                title="Instagram"><i class="fab fa-instagram"></i></a>
                                         @endif
-                                
-                                        @if(!empty($config->linkedin))
-                                            <a href="{{ $config->linkedin }}" class="social-icon" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+
+                                        @if (!empty($config->linkedin))
+                                            <a href="{{ $config->linkedin }}" class="social-icon" target="_blank"
+                                                title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                                         @endif
-                                
-                                        @if(!empty($config->tiktok))
-                                            <a href="{{ $config->tiktok }}" class="social-icon" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+
+                                        @if (!empty($config->tiktok))
+                                            <a href="{{ $config->tiktok }}" class="social-icon" target="_blank"
+                                                title="TikTok"><i class="fab fa-tiktok"></i></a>
                                         @endif
                                     </div>
                                 </div>
-                                
-                                
+
+
 
                             </div>
                         </div>
@@ -695,7 +708,7 @@
                                 </div>
                                 <div class="product-content">
                                     <div class="product-rating">
-                                     
+
                                     </div>
                                     <h6 class="product-title"><a
                                             href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
@@ -778,34 +791,34 @@
 
     <!-- JS
 ============================================ -->
-     <!-- Modernizer JS -->
-     <script src="/assets/js/vendor/modernizr.min.js"></script>
-     <!-- jQuery JS -->
-     <script src="assets/js/vendor/jquery.js"></script>
-     <!-- Bootstrap JS -->
-     <script src="/assets/js/vendor/popper.min.js"></script>
-     <script src="/assets/js/vendor/bootstrap.min.js"></script>
-     <script src="/assets/js/vendor/slick.min.js"></script>
-     <script src="/assets/js/vendor/js.cookie.js"></script>
-     <!-- <script src="assets/js/vendor/jquery.style.switcher.js"></script> -->
-     <script src="/assets/js/vendor/jquery-ui.min.js"></script>
-     <script src="/assets/js/vendor/jquery.ui.touch-punch.min.js"></script>
-     <script src="/assets/js/vendor/jquery.countdown.min.js"></script>
-     <script src="/assets/js/vendor/sal.js"></script>
-     <script src="/assets/js/vendor/jquery.magnific-popup.min.js"></script>
-     <script src="/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
-     <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
-     <script src="/assets/js/vendor/counterup.js"></script>
-     <script src="/assets/js/vendor/waypoints.min.js"></script>
- 
-     <!-- Main JS -->
-     <script src="/assets/js/main.js"></script>
-
-
-     <!-- Owl Carousel CSS -->
+    <!-- Modernizer JS -->
+    <script src="/assets/js/vendor/modernizr.min.js"></script>
+    <!-- jQuery JS -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="/assets/js/vendor/popper.min.js"></script>
+    <script src="/assets/js/vendor/bootstrap.min.js"></script>
+    <script src="/assets/js/vendor/slick.min.js"></script>
+    <script src="/assets/js/vendor/js.cookie.js"></script>
+    <!-- <script src="assets/js/vendor/jquery.style.switcher.js"></script> -->
+    <script src="/assets/js/vendor/jquery-ui.min.js"></script>
+    <script src="/assets/js/vendor/jquery.ui.touch-punch.min.js"></script>
+    <script src="/assets/js/vendor/jquery.countdown.min.js"></script>
+    <script src="/assets/js/vendor/sal.js"></script>
+    <script src="/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+    <script src="/assets/js/vendor/imagesloaded.pkgd.min.js"></script>
+    <script src="/assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="/assets/js/vendor/counterup.js"></script>
+    <script src="/assets/js/vendor/waypoints.min.js"></script>
 
     <!-- Main JS -->
-   
+    <script src="/assets/js/main.js"></script>
+
+
+    <!-- Owl Carousel CSS -->
+
+    <!-- Main JS -->
+
 
 </body>
 
