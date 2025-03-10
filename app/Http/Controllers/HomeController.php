@@ -33,6 +33,11 @@ class HomeController extends Controller
 
        $rescentesproduits = produits::select('*')->take(10)->get();
       // $produitspromotions = produits::select('*')->
+
+      $produitsLesPlusVendus = produits::withCount('vendus')
+    ->orderByDesc('vendus_count')
+    ->take(10) // Limite aux 10 produits les plus vendus
+    ->get();
     
 
 
@@ -50,7 +55,7 @@ class HomeController extends Controller
        ->limit(10)->get();
 
        $services = Service::all();
-      return view('front.index', compact('rescentesproduits','searchproducts','produits','configs','banners','services','key','testimonials', 'categoryProducts'));
+      return view('front.index', compact('produitsLesPlusVendus','rescentesproduits','searchproducts','produits','configs','banners','services','key','testimonials', 'categoryProducts'));
 
     }
      

@@ -201,12 +201,12 @@
                             {{ \App\Helpers\TranslationHelper::TranslateText('Ce mois') }}
                         </span>
                         <h2 class="title blink-text">
-                            {{ \App\Helpers\TranslationHelper::TranslateText('Les nouveautés') }}
+                            {{ \App\Helpers\TranslationHelper::TranslateText('Les  produits les plus vendus') }}
                         </h2>
                     </div>
                     <div
                         class="new-arrivals-product-activation-2 slick-layout-wrapper--15 axil-slick-arrow arrow-top-slide product-slide-mobile">
-                        @foreach ($rescentesproduits as $produit)
+                        @foreach ($produitsLesPlusVendus as $produit)
                             <div class="slick-single-layout">
                                 <div class="axil-product product-style-three">
                                     <div class="thumbnail">
