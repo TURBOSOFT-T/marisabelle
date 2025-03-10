@@ -201,7 +201,7 @@
                             {{ \App\Helpers\TranslationHelper::TranslateText('Ce mois') }}
                         </span>
                         <h2 class="title blink-text">
-                            {{ \App\Helpers\TranslationHelper::TranslateText('Les  produits les plus vendus') }}
+                            {{ \App\Helpers\TranslationHelper::TranslateText('Les meilleures ventes') }}
                         </h2>
                     </div>
                     <div
