@@ -258,7 +258,7 @@ return [
     |--------------------------------------------------------------------------
     */
 
-    'description' => 'Le site  de vente en ligne',
-    'author' => 'The best author',
+    'description' => 'MARISABELLE est une entreprise spécialisée dans l’extension de cils, dédiée à sublimer le regard de nos clientes avec des prestations de haute qualité. Nous proposons des extensions de cils classiques, volume russe, mixte et méga volume, adaptées à chaque type d’œil et à chaque préférence.',
+    'author' => 'MARISABELLE',
 
 ];

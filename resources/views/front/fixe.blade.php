@@ -345,15 +345,17 @@
 
 
                                 </li class="menu-item">
-                                <li><a href="{{ route('about') }}">
-                                        {{ \App\Helpers\TranslationHelper::TranslateText('A propos de nous') }}</a>
-                                </li>
 
 
 
                                 <li class="menu-item">
                                     <a href="{{ route('shop') }}">{{ __('boutique') }}</a>
                                 </li>
+                                <li><a href="{{ route('about') }}">
+                                        {{ \App\Helpers\TranslationHelper::TranslateText('A propos de nous') }}</a>
+                                </li>
+
+
                                 <li class="menu-item"><a href="{{ route('actualites') }}">
                                         {{ \App\Helpers\TranslationHelper::TranslateText('Actualités') }}
                                     </a></li>

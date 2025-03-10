@@ -11,7 +11,7 @@
         @endphp
 
         <body class="sticky-header">
-         
+
             <a href="#top" class="back-to-top" id="backto-top"><i class="fal fa-arrow-up"></i></a>
 
             <main class="main-wrapper">
@@ -22,24 +22,25 @@
                             <div class="col-lg-6 col-md-8">
                                 <div class="inner">
                                     <ul class="axil-breadcrumb">
-                                        <li class="axil-breadcrumb-item"><a href="{{ route('home') }}">  {{ \App\Helpers\TranslationHelper::TranslateText('Accueil') }}</a></li>
+                                        <li class="axil-breadcrumb-item"><a href="{{ route('home') }}">
+                                                {{ \App\Helpers\TranslationHelper::TranslateText('Accueil') }}</a></li>
                                         <li class="separator"></li>
-                                        <li class="axil-breadcrumb-item1 active" aria-current="page">  {{ __('boutique') }}</li>
+                                        <li class="axil-breadcrumb-item1 active" aria-current="page"> {{ __('boutique') }}
+                                        </li>
                                     </ul>
 
                                     <style>
                                         .axil-breadcrumb-item1 {
-                font-size: 14px;
-                color: #EFB121; /* Default breadcrumb color */
-            }
-            
-            .axil-breadcrumb-item.active {
-                font-weight: bold;
-                color: #EFB121; /* Distinct color for active item */
-            }
-            
+                                            font-size: 14px;
+                                            color: #EFB121;
+                                            /* Default breadcrumb color */
+                                        }
 
-            
+                                        .axil-breadcrumb-item.active {
+                                            font-weight: bold;
+                                            color: #EFB121;
+                                            /* Distinct color for active item */
+                                        }
                                     </style>
                                     <h1 class="title">
                                         {{ \App\Helpers\TranslationHelper::TranslateText('Explorez tous les produits') }}
@@ -51,7 +52,7 @@
                                     <div class="bradcrumb-thumb">
                                         <img src="{{ Storage::url($config->image_shop) }}" alt="Image">
                                     </div>
-                                </div> 
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,17 +69,20 @@
                                         <button class="sidebar-close filter-close-btn"><i class="fas fa-times"></i></button>
                                     </div>
                                     <div class="toggle-list product-categories active">
-                                        <h6 class="title"> {{ \App\Helpers\TranslationHelper::TranslateText('CATEGORIES') }}</h6>
+                                        <h6 class="title">
+                                            {{ \App\Helpers\TranslationHelper::TranslateText('CATEGORIES') }}</h6>
                                         <div class="shop-submenu">
                                             <ul>
-                                                <li class="current-cat"><a href="/shop"> {{ \App\Helpers\TranslationHelper::TranslateText('Tous les produits') }}</a></li>
+                                                <li class="current-cat"><a href="/shop">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Tous les produits') }}</a>
+                                                </li>
 
                                                 @foreach ($categories as $category)
                                                     <li><a href="/category/{{ $category->id }}"
                                                             class="{{ isset($current_category) && $current_category->id === $category->id ? 'selected' : '' }}">
-                                                           
-                                                            {{ \App\Helpers\TranslationHelper::TranslateText( Str::limit($category->nom, 25)) }}
-                                                            
+
+                                                            {{ \App\Helpers\TranslationHelper::TranslateText(Str::limit($category->nom, 25)) }}
+
                                                             <span>({{ $category->produits->count() }})</span></a>
                                                     </li>
                                                 @endforeach
@@ -110,154 +114,164 @@
                                             <div
                                                 class="category-select align-items-center justify-content-lg-end justify-content-between">
                                                 <!-- Start Single Select  -->
-                                                <span class="filter-results"> {{ \App\Helpers\TranslationHelper::TranslateText('Filtrer') }}</span>
+                                                <span class="filter-results">
+                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Filtrer') }}</span>
                                                 <select class="single-select" name="sort_by" id="sort_by"
                                                     onchange="window.location.href=this.value;">
 
-                                                    <option value="{{ url('shop') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Défaut') }}</option>
-                                                    <option value="{{ url('croissant') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Croissant') }}</option>
+                                                    <option value="{{ url('shop') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Défaut') }}
+                                                    </option>
+                                                    <option value="{{ url('croissant') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Croissant') }}
+                                                    </option>
 
-                                                    <option value="{{ url('decroissant') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Décroissant') }}</option>
-                                                    <option value="{{ url('promotion') }}"> {{ \App\Helpers\TranslationHelper::TranslateText('Promotions') }}</option>
+                                                    <option value="{{ url('decroissant') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Décroissant') }}
+                                                    </option>
+                                                    <option value="{{ url('promotion') }}">
+                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Promotions') }}
+                                                    </option>
                                                 </select>
                                                 <!-- End Single Select  -->
                                             </div>
                                             <div class="d-lg-none">
                                                 <button class="product-filter-mobile filter-toggle"><i
-                                                        class="fas fa-filter"></i>  {{ \App\Helpers\TranslationHelper::TranslateText('Filtrer') }}</button>
+                                                        class="fas fa-filter"></i>
+                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Filtrer') }}</button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- End .row -->
                                 <div class="row row--15">
-                                 <style>
-                                    img.product-image {
-    width: 200px;  /* Largeur fixe */
-    height: 200px; /* Hauteur fixe */
-    object-fit: cover; /* Cela garantit que l'image couvre l'espace sans déformer l'image */
-}
+                                    <style>
+                                        img.product-image {
+                                            width: 200px;
+                                            /* Largeur fixe */
+                                            height: 200px;
+                                            /* Hauteur fixe */
+                                            object-fit: cover;
+                                            /* Cela garantit que l'image couvre l'espace sans déformer l'image */
+                                        }
+                                    </style>
 
-                                 </style>
+                                    @foreach ($produits as $key => $produit)
+                                        <div class="col-xl-4 col-sm-6">
+                                            <div class="axil-product product-style-one mb--30">
+                                                <div class="thumbnail">
+                                                    <a
+                                                        href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
+                                                        <img class="product-image"
+                                                            src="{{ Storage::url($produit->photo) }}"
+                                                            alt="{{ $produit->nom }}"
+                                                            style="max-width: 300px; max-height: 300px;">
 
-                                        @foreach ($produits as $key => $produit)
-                                            <div class="col-xl-4 col-sm-6">
-                                                <div class="axil-product product-style-one mb--30">
-                                                    <div class="thumbnail">
-                                                        <a
-                                                            href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
-                                                            <img  class="product-image" src="{{ Storage::url($produit->photo) }}" 
-                                                          
-                                                                alt="{{ $produit->nom }}"
-                                                                style="max-width: 300px; max-height: 300px;">
-
-                                                        </a>
-                                                        <style>
-                                                            .top-left {
-                                                                position: absolute;
-                                                                top: 8px;
-                                                                right: 18px;
-                                                                color:#EFB121;
-                                                            }
-                                                        </style>
-                                                        @if ($produit->inPromotion())
-                                                            <div class="top-left"
-                                                                style="background-color:#EFB121;color: white;">
-                                                                <div class="product-badget">
-                                                                    -{{ $produit->inPromotion()->pourcentage }}%</div>
-                                                            </div>
-                                                        @endif
-                                                        <div class="product-hover-action">
-                                                            <ul class="cart-action">
-                                                                @if (Auth()->user())
-
-                                                                @php
-                
-                                                                $count = DB::table('favoris')
-                                                                    ->where('id_user', Auth()->user()->id)
-                                                                    ->where('id_produit', $produit->id)
-                                                                    ->count();
-                                                            @endphp
-                
-                
-                                                                <li class="wishlist"><a onclick="AddFavoris({{ $produit->id }})"
-                                                                    @if ($count == 0)
-                                                                    class="" style="color:#000000"
-                                                                    @else
-                                                                    class="" style="color: #dc3545; background-color:#dc3545"
-                                                                    @endif
-                                                                    >
-                                                                    
-                                                                    <i class="far fa-heart"></i></a></li>
-                                                                @endif
-                
-                
-                                                                <li class="select-option2"><a
-                                                                        onclick="AddToCart( {{ $produit->id }} )">
-                                                                        {{ \App\Helpers\TranslationHelper::TranslateText('Ajouter au panier') }}</a></li>
-                                                                            <style>
-                                                                    .select-option2 {
-                                                                        background-color: #5EA13C;
-                                                                        color: #ffffff;
-                                                                        border: none;
-                                                                        padding: 10px 20px;
-                                                                        border-radius: 5px;
-                                                                        text-decoration: none;
-                                                                    }
-                                                                </style>
-                                                            </ul>
+                                                    </a>
+                                                    <style>
+                                                        .top-left {
+                                                            position: absolute;
+                                                            top: 8px;
+                                                            right: 18px;
+                                                            color: #EFB121;
+                                                        }
+                                                    </style>
+                                                    @if ($produit->inPromotion())
+                                                        <div class="top-left"
+                                                            style="background-color:#EFB121;color: white;">
+                                                            <div class="product-badget">
+                                                                -{{ $produit->inPromotion()->pourcentage }}%</div>
                                                         </div>
+                                                    @endif
+                                                    <div class="product-hover-action">
+                                                        <ul class="cart-action">
+                                                            @if (Auth()->user())
+                                                                @php
+
+                                                                    $count = DB::table('favoris')
+                                                                        ->where('id_user', Auth()->user()->id)
+                                                                        ->where('id_produit', $produit->id)
+                                                                        ->count();
+                                                                @endphp
+
+
+                                                                <li class="wishlist"><a
+                                                                        onclick="AddFavoris({{ $produit->id }})"
+                                                                        @if ($count == 0) class="" style="color:#000000"
+                                                                    @else
+                                                                    class="" style="color: #dc3545; background-color:#dc3545" @endif>
+
+                                                                        <i class="far fa-heart"></i></a></li>
+                                                            @endif
+
+
+                                                            <li class="select-option2"><a
+                                                                    onclick="AddToCart( {{ $produit->id }} )">
+                                                                    {{ \App\Helpers\TranslationHelper::TranslateText('Ajouter au panier') }}</a>
+                                                            </li>
+                                                            <style>
+                                                                .select-option2 {
+                                                                    background-color: #5EA13C;
+                                                                    color: #ffffff;
+                                                                    border: none;
+                                                                    padding: 10px 20px;
+                                                                    border-radius: 5px;
+                                                                    text-decoration: none;
+                                                                }
+                                                            </style>
+                                                        </ul>
                                                     </div>
-                                                    <div class="product-content">
-                                                        <div class="inner">
-                                                            <h5 class="title"><a
-                                                                    href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
-                                                                    {{ \App\Helpers\TranslationHelper::TranslateText(Str::limit($produit->nom, 15)) }}
-                                                                </a>
-                                                            </h5>
-                                                           
-                                                            <div class="product-price-variant">
-                                                                <h6 class="product-price--main">
+                                                </div>
+                                                <div class="product-content">
+                                                    <div class="inner">
+                                                        <h5 class="title"><a
+                                                                href="{{ route('details-produits', ['id' => $produit->id, 'slug' => Str::slug(Str::limit($produit->nom, 10))]) }}">
+                                                                {{ \App\Helpers\TranslationHelper::TranslateText(Str::limit($produit->nom, 15)) }}
+                                                            </a>
+                                                        </h5>
+
+                                                        <div class="product-price-variant">
+                                                            <h6 class="product-price--main">
 
 
-                                                                    @if ($produit->inPromotion())
-                                                                        <div class="row">
-                                                                            <div class="col-sm-6 col-6">
+                                                                @if ($produit->inPromotion())
+                                                                    <div class="row">
+                                                                        <div class="col-sm-6 col-6">
 
-                                                                                <b class="text-success"
-                                                                                    style="color: #4169E1">
-                                                                                    {{ $produit->getPrice() }} <x-devise></x-devise> 
-                                                                                </b>
-                                                                            </div>
+                                                                            <b class="text-success" style="color: #4169E1">
+                                                                                {{ $produit->getPrice() }}
+                                                                                <x-devise></x-devise>
+                                                                            </b>
+                                                                        </div>
 
-                                                                            <div class="col-sm-6 col-6 text-end">
-
-
-
-                                                                        
-                                                                                <span class="price old-price"
-                                                                                    style="position: relative; font-size: 1.5rem; color: #dc3545; font-weight: bold;">
-                                                                                    {{ $produit->prix }} <x-devise></x-devise> 
-                                                                                    <span
-                                                                                        style="position: absolute; top: 50%; left: 0; width: 100%; height: 2px; background-color: black;"></span>
-                                                                                </span>
-
-
-                                                                            </div>
-                                                                        @else
-                                                                            {{ $produit->getPrice() }}<x-devise></x-devise> 
-                                                                    @endif
+                                                                        <div class="col-sm-6 col-6 text-end">
 
 
 
-                                                                </h6>
-                                                            </div>
+
+                                                                            <span class="price old-price"
+                                                                                style="position: relative; font-size: 1.5rem; color: #dc3545; font-weight: bold;">
+                                                                                {{ $produit->prix }} <x-devise></x-devise>
+                                                                                <span
+                                                                                    style="position: absolute; top: 50%; left: 0; width: 100%; height: 2px; background-color: black;"></span>
+                                                                            </span>
+
+
+                                                                        </div>
+                                                                    @else
+                                                                        {{ $produit->getPrice() }}<x-devise></x-devise>
+                                                                @endif
+
+
+
+                                                            </h6>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                        @endforeach
-                                  
+                                        </div>
+                                    @endforeach
+
 
                                     <!-- End Single Product  -->
                                 </div>
@@ -405,12 +419,12 @@
 
                                                                 <span
                                                                     style="position: relative; font-size: 1.2rem; color: #dc3545; font-weight: bold;">
-                                                                    {{ $produit->prix }} <x-devise></x-devise> 
+                                                                    {{ $produit->prix }} <x-devise></x-devise>
                                                                     <span
                                                                         style="position: absolute; top: 50%; left: 0; width: 100%; height: 2px; background-color: black;"></span>
                                                                 </span>
                                                             @else
-                                                                {{ $produit->getPrice() }}<x-devise></x-devise> 
+                                                                {{ $produit->getPrice() }}<x-devise></x-devise>
                                                             @endif
                                                         </span>
                                                         <ul class="product-meta">
