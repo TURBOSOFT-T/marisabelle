@@ -160,7 +160,7 @@
                             {{ \App\Helpers\TranslationHelper::TranslateText('Ce mois') }}
                             </span>
                         <h2 class="title">
-                            {{ \App\Helpers\TranslationHelper::TranslateText('Nouvelles arrivés') }}
+                            {{ \App\Helpers\TranslationHelper::TranslateText('Les nouveautés') }}
                         </h2>
                     </div>
                     <div
